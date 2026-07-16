@@ -23,11 +23,19 @@ let init = [
         price : "38" ,
         category : "Make up" ,
     } ,
+    {
+        id : "4" ,
+        imgUrl : "https://www.dior.com/dw/image/v2/BGXS_PRD/on/demandware.static/-/Sites-master_dior/default/dwc6ed50e7/Y0381009/Y0381009_C038100849_E01_GHC.jpg?sw=800" ,
+        name : "Dior Vernis" ,
+        description : "24h Hydrating Lip Oil - 3 Ultra-Glossy Finishes 16 shades available" ,
+        price : "34" ,
+        category : "Nail" 
+    } ,
 ]
 
 const list = document.querySelector(".list")
 let cards = JSON.parse(localStorage.getItem("cards")) || init
-let lastId = parseInt(localStorage.getItem("lastId")) || 3
+let lastId = parseInt(localStorage.getItem("lastId")) || 4
 
 const controlForm = document.querySelector("#controlForm")
 const productUrl = document.querySelector("#imageProduct")

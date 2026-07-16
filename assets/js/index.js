@@ -36,16 +36,16 @@ let init = [
 const all = document.querySelector(".all")
 let cards = JSON.parse(localStorage.getItem("cards")) || init
 
-if(localStorage.getItem("cards") == null){
-    cards.forEach(card =>{
-        localStorage.setItem("cards" , JSON.stringify(cards))
-    })
-    localStorage.setItem("lastId", init.length); 
-    cards = init
-    lastId = init.length
-    console.log("test");
-}
-read()
+// if(localStorage.getItem("cards") == null){
+//     cards.forEach(card =>{
+//         localStorage.setItem("cards" , JSON.stringify(cards))
+//     })
+//     localStorage.setItem("lastId", init.length); 
+//     cards = init
+//     lastId = init.length
+//     console.log("test");
+// }
+// read()
 
 const read = () => {
     all.innerHTML= ""
@@ -71,7 +71,7 @@ let filteredCard = []
 const nameSearch = document.querySelector("#textSearch")
 nameSearch.addEventListener("input" , () => {
     const searchValue = event.target.value.toLowerCase()
-    filteredCard = cards.filter(cards => {return card.name.toLowerCase()})
+    filteredCard = cards.filter(cards => {return cards.name.toLowerCase()})
     read(filteredCard)
     
 })
@@ -199,7 +199,7 @@ readSlider()
 
 const reset = document.querySelector("#reset")
 reset.addEventListener("click" , ()=>{
-    localStorage.clear
+    localStorage.clear()
     console.log("done")
     
 })
