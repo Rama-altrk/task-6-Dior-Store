@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/control.css">
+    <title>Control | Dior store</title>
+</head>
+<body>
+    <div class="container">
+        <!-- لوحة التحكم -->
+        <div class="sideBar">
+            <div class="myNav">
+                <a href="./index.html" class="myBottun">
+                    Back to store 
+                    <i class="fa-solid fa-shop"></i>
+                </a>
+                <img src="./assets/img/Dior_Logo.png" alt="Dior_Logo">
+            </div>
+
+            <!-- نموذج الإضافة -->
+            <button class="myBottun addButton hidden">
+                <i class="fa-solid fa-plus"></i>
+                Add New Produt
+            </button>
+            <form action="" id="controlForm">
+                <div class="formStyle">
+                    <label for="nameProduct">Product Name:</label>
+                    <input type="text" name="nameProduct" id="nameProduct" placeholder="enter your product name:" required>
+                </div>
+                <div class="formStyle">
+                    <label for="priceProduct">Product Price:</label>
+                    <input type="number" min="0" name="priceProduct" id="priceProduct" placeholder="enter your product price:" required>
+                </div>
+                <div class="formStyle">
+                    <label for="descriptionProduct">Product Description:</label>
+                    <input type="text" name="descriptionProduct" id="descriptionProduct" placeholder="enter product description:">
+                </div>
+                <div class="formStyle">
+                    <label for="imageProduct">Product Image URL:</label>
+                    <input type="url" name="imageProduct" id="imageProduct" placeholder="paste URL:" pattern="https?://.+" required>
+                </div>
+                <select name="categoryOfProduct" id="categoryOfProduct" required>
+                    <option value="">Select the product category:</option>
+                    <option value="Makeup">Makeup</option>
+                    <option value="Nail">Nail</option>
+                    <option value="Perfume">Perfume</option>
+                    <option value="Accessories">Accessories</option>
+                </select>
+                <!-- <button type="submit" id="addCard" class="myBottun addButton">Publish Product</button> -->
+
+                <input type="submit" value="Publish Product" id="add" class="myBottun addButton">
+            </form>
+
+        </div>
+
+        <!-- الجانب اليميني -->
+        <div class="rightSide">
+            <h3>Product List</h3>
+            <div class="list">
+                <div class="oneOfList">
+                    <img src="https://www.dior.com/dw/image/v2/BGXS_PRD/on/demandware.static/-/Library-Sites-DiorSharedLibrary/default/dw3bb745b2/images/beauty/02-MAKEUP/2026/ADDICT/Y0000163_E000001063_E01_GHC.jpg?sw=640" alt="Lip Glow Oil">
+                    <p>Lip Glow Oil</p>
+                    <p><span id="price">42</span>$</p>
+                    <p>Make up</p>
+                    <div class="editDelete">
+                        <button class="edit"><i class="fa-solid fa-pen"></i></button>
+                        <button class="delete"><i class="trash fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+                <div class="oneOfList">
+                    <img src="https://www.dior.com/dw/image/v2/BGXS_PRD/on/demandware.static/-/Library-Sites-DiorSharedLibrary/default/dw3bb745b2/images/beauty/02-MAKEUP/2026/ADDICT/Y0000163_E000001063_E01_GHC.jpg?sw=640" alt="Lip Glow Oil">
+                    <p>Lip Glow Oil</p>
+                    <p><span id="price">42</span>$</p>
+                    <p>Make up</p>
+                    <div class="editDelete">
+                        <button class="edit"><i class="fa-solid fa-pen"></i></button>
+                        <button class="delete"><i class="trash fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+                <div class="oneOfList">
+                    <img src="https://www.dior.com/dw/image/v2/BGXS_PRD/on/demandware.static/-/Library-Sites-DiorSharedLibrary/default/dw3bb745b2/images/beauty/02-MAKEUP/2026/ADDICT/Y0000163_E000001063_E01_GHC.jpg?sw=640" alt="Lip Glow Oil">
+                    <p>Lip Glow Oil</p>
+                    <p><span id="price">42</span>$</p>
+                    <p>Make up</p>
+                    <div class="editDelete">
+                        <button class="edit"><i class="fa-solid fa-pen"></i></button>
+                        <button class="delete"><i class="trash fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="./assets/js/main.js"></script> -->
+    <script src="./assets/js/control.js"></script>
+</body>
+</html>

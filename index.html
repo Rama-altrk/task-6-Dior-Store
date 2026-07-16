@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <title>Dior store</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sideBar">
+            <form action="">
+                <div class="headerOfFilter">
+                    <p>Filters</p>
+                    <input type="reset" value="Reset Filters" id="reset" class="myBottun">
+                </div>
+                <div class="searchByName">
+                    <div><i class="iconSearch fa-solid fa-magnifying-glass"></i></div>
+                    <!-- <input type="search" class="searc"> -->
+                    <input type="search" name="textSearch" id="textSearch" placeholder="Search By Name">
+                </div>
+                <!-- اختيار حسب الفئة -->
+                <p style="margin-top: 24px;">Select by categories:</p>
+                <div class="categories" style="margin-top: 16px;">
+                    
+                        <input type="button" value="Makeup" class="myBottun">
+                        <input type="button" value="Accessories" class="myBottun">
+                        <input type="button" value="Nail" class="myBottun">
+                        <input type="button" value="Perfume" class="myBottun">
+                </div>
+                
+                <div>
+                    <select name="order" id="orderedByPrice">
+                        <option value="">Sort by price:</option>
+                        <!-- <div class="toUp"> -->
+                            <!-- <i class="iconToUp fa-solid fa-arrow-up"></i> -->
+                            <option value="Ascending" class="">Ascending</option>
+                        <!-- </div> -->
+                        <option value="Descending" class="toDown">Descending</option>
+                            <!-- <i class="iconToDown fa-solid fa-arrow-down"></i> -->
+                    </select>
+                </div>
+            </form>
+            <a href="./control.html" class="myBottun">Dashboard</a>
+        </div>
+
+        <div class="rightSide">
+            <!-- سلايدر الفلترة -->
+            <div class="slider">
+                <i class="arrowIcon left fa-solid fa-chevron-left"></i>
+                <div class="cards">
+                    <div class="silderCard">
+                        <img src="https://www.dior.com/dw/image/v2/BGXS_PRD/on/demandware.static/-/Library-Sites-DiorSharedLibrary/default/dw3bb745b2/images/beauty/02-MAKEUP/2026/ADDICT/Y0000163_E000001063_E01_GHC.jpg?sw=640" alt="Lip Glow Oil">
+                        <h4>Lip Glow Oil</h4>
+                        <p>42.00$</p>
+                    </div>
+                    <!-- <div class="silderCard">
+                        <img src="https://www.dior.com/dw/image/v2/BGXS_PRD/on/demandware.static/-/Sites-master_dior/default/dw34b7e45d/Y0000190/Y0000190_E000001567_E01_RHC.jpg?sw=640" alt="Glassy Glow Stick">
+                        <h4>Glassy Glow Stick</h4>
+                        <p>44.00$</p>
+                    </div> -->
+                    <div class="silderCard">
+                        <img src="https://www.dior.com/dw/image/v2/BGXS_PRD/on/demandware.static/-/Sites-master_dior/default/dw69553985/Y0319000/Y0319000_E000001940_E01_GHC.jpg?sw=800" alt="Lip Maximizer">
+                        <h4>Lip Maximizer</h4>
+                        <p>42.00$</p>
+                    </div>
+                    <div class="silderCard">
+                        <img src="https://www.dior.com/dw/image/v2/BGXS_PRD/on/demandware.static/-/Sites-master_dior/default/dw6d4b95c3/Y0000002/Y0000002_E000000243_E01_GHC.jpg?sw=800" alt="Diorshow Overvolume">
+                        <h4>Diorshow Overvolume</h4>
+                        <p>38.00$</p>
+                    </div>
+                    <div class="silderCard">
+                        <img src="https://www.dior.com/dw/image/v2/BGXS_PRD/on/demandware.static/-/Sites-master_dior/default/dwc6ed50e7/Y0381009/Y0381009_C038100849_E01_GHC.jpg?sw=800" alt="Dior Vernis">
+                        <h4>Dior Vernis</h4>
+                        <p>34.00$</p>
+                    </div>
+                    <div class="silderCard">
+                        <img src="https://www.dior.com/dw/image/v2/BGXS_PRD/on/demandware.static/-/Sites-master_dior/default/dwc6ed50e7/Y0381009/Y0381009_C038100849_E01_GHC.jpg?sw=800" alt="Dior Vernis">
+                        <h4>Dior Vernis</h4>
+                        <p>34.00$</p>
+                    </div>
+                    <div class="silderCard">
+                        <img src="https://www.dior.com/dw/image/v2/BGXS_PRD/on/demandware.static/-/Sites-master_dior/default/dwc6ed50e7/Y0381009/Y0381009_C038100849_E01_GHC.jpg?sw=800" alt="Dior Vernis">
+                        <h4>Dior Vernis</h4>
+                        <p>34.00$</p>
+                    </div>
+                    <div class="silderCard">
+                        <img src="https://www.dior.com/dw/image/v2/BGXS_PRD/on/demandware.static/-/Sites-master_dior/default/dwc6ed50e7/Y0381009/Y0381009_C038100849_E01_GHC.jpg?sw=800" alt="Dior Vernis">
+                        <h4>Dior Vernis</h4>
+                        <p>34.00$</p>
+                    </div>
+                </div>
+                <i class="arrowIcon right fa-solid fa-chevron-right"></i>
+            </div>
+
+            <!-- جميع المنتجات -->
+            <div class="bottomRight">
+                <h3 id="test">All Products</h3>
+                <!-- <p class="explanatoryText">Showing <span id="numberOfProduct">20</span> products</p> -->
+                <div class="all">
+                    <div class="publicCard">
+                        <img class="productUrl" src="https://www.dior.com/dw/image/v2/BGXS_PRD/on/demandware.static/-/Library-Sites-DiorSharedLibrary/default/dw3bb745b2/images/beauty/02-MAKEUP/2026/ADDICT/Y0000163_E000001063_E01_GHC.jpg?sw=640" alt="Lip Glow Oil">
+                        <div class="description">
+                            <h4 class="productName">Lip Glow Oil</h4>
+                            <p class="secondryDescription">24h Hydrating Lip Oil - 3 Ultra-Glossy Finishes 16 shades available</p>
+                            <p><span class="price">42</span>$</p>
+                        </div>
+                    </div>
+
+                    <div class="publicCard">
+                        <img src="https://www.dior.com/dw/image/v2/BGXS_PRD/on/demandware.static/-/Sites-master_dior/default/dw69553985/Y0319000/Y0319000_E000001940_E01_GHC.jpg?sw=800" alt="Lip Maximizer">
+                        <div class="description">
+                            <h4 class="productName">Lip Maximizer</h4>
+                            <p class="secondryDescription">24h Hydrating Lip Oil - 3 Ultra-Glossy Finishes 16 shades available</p>
+                            <p><span class="price">42</span>$</p>
+                        </div>
+                    </div>
+
+                    <div class="publicCard">
+                        <img src="https://www.dior.com/dw/image/v2/BGXS_PRD/on/demandware.static/-/Sites-master_dior/default/dw6d4b95c3/Y0000002/Y0000002_E000000243_E01_GHC.jpg?sw=800" alt="Diorshow Overvolume">
+                        <div class="description">
+                            <h4 class="productName">Diorshow Overvolume</h4>
+                            <p class="secondryDescription">24h Hydrating Lip Oil - 3 Ultra-Glossy Finishes 16 shades available</p>
+                            <p><span class="price">38</span>$</p>
+                        </div>
+                    </div>
+                    <!-- قالب لإضافة العناصر -->
+                    <!-- <div class="publicCard template hidden">
+                        <img src="" alt="">
+                        <div class="description">
+                            <h4></h4>
+                            <p class="secondryDescription"></p>
+                            <p><span class="price"></span>$</p>
+                        </div>
+                    </div> -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="./assets/js/main.js"></script> -->
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>

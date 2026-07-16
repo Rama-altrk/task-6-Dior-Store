@@ -1,0 +1,124 @@
+
+.myNav{
+    width: 100%;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #945a5a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img{
+        width: 72px;
+    }
+    
+}
+
+.addButton{
+    color: #f3f3f3;
+    border-color: #945a5a;
+    background-color: #945a5a;
+}
+
+.formStyle{
+    font-size: 24px;
+    margin-bottom: 8px;
+    label{
+        display: block;
+        padding-bottom: 4px;
+    }
+    input{
+        width: 320px;
+        height: 32px;
+        padding: 8px;
+        margin-left: 8px;
+        border: 2px solid #945a5a !important;
+        border-radius: 24px;
+        background-color: #ffffff00;
+        font-size: 16px;
+    }
+}
+
+input[type=submit]{
+    display: block;
+    margin: 0 auto;
+    margin-top: 160px;
+    
+}
+
+#categoryOfProduct{
+    width: 320px;
+    height: 32px;
+    padding: 0 8px;
+    margin-left: 8px;
+    margin-top: 16px;
+    font-size: 16px;
+    border: 2px solid #945a5a !important;
+    border-radius: 24px;
+    background-color: #ffffff00;
+    option{
+        /* background-color: #945a5a; */
+        /* border: 2px solid #945a5a !important; */
+        /* border-radius: 24px !important; */
+        background-color: #804c4ccc;
+    }
+
+}
+
+.rightSide{
+    h3{
+        font-size: 32px;
+        margin: 24px;
+        /* font-weight: reguler; */
+    }
+    .list{
+        padding: 24px;
+    }
+}
+
+.oneOfList{
+    /* width: 320px; */
+    margin: 0 80px;
+    margin-bottom: 24px;
+    padding: 8px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #7c626230;
+    border-radius: 8px;
+    &:hover{
+        transform: scale(1.03);
+        transition-duration: 0.3s;
+    }
+    img{
+        width: 72px;
+        border-radius: 8px;
+    }
+    .editDelete{
+        display: flex;
+        gap: 24px;
+        .edit , .delete{
+            width: 32px;
+            padding: 4px 0;
+            text-align: center;
+            background-color: #f3f3f3;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 2px 2px 6px #945a5a;
+            
+            &:hover{
+                background-color: #ffffff;
+                transition: 0.3s ease;
+            }
+        }
+    }
+}
+
+
+.trash{
+        color: red;
+    }
+/* 
+<i class="fa-solid fa-pen"></i>
+<i class="fa-solid fa-trash-can"></i>
+<i class="fa-regular fa-circle-check"></i>
+*/
+

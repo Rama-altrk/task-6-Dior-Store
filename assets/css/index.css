@@ -1,0 +1,190 @@
+.sideBar{
+    form{
+        font-size: 24px;
+        /* margin-bottom: 24px; */
+        div{
+            margin-top: 24px;
+        }
+        .headerOfFilter{
+            font-size: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 24px;
+            border-bottom: 1px solid #945a5a;
+            /* input{
+                padding: 4px;
+                font-size: 16px;
+                background-color: #f5e7d800;
+                border-radius: 10px;
+                border: 1px solid;
+            } */
+        }
+        
+        .searchByName{    
+            width: 320px;
+            height: 48px;
+            border-radius: 32px;
+            border: 2px solid #945a5a;
+            background-color: #ffffff;
+            display: flex;
+            gap: 10px;
+            padding: 2px 4px;
+            div{
+                width: 40px;
+                height: 40px;
+                margin-top: 0;
+                background-color: #945a5a77;
+                /* background-color: #7c626230; */
+                border-radius: 50%;
+                text-align: center;
+                padding-top: 8px;
+            }
+            input[type = search]{
+                width: 240px;
+                padding: 8px;
+                border: none;
+                &:focus{
+                    border: none;
+                }
+            }
+        }
+
+        .priceRange{
+            /* margin-top: 24px; */
+            input[type = range]{
+                display: block;
+                width: 320px;
+                margin: 0 auto;
+                margin-top: 16px;
+            }
+        }
+
+        .categories{
+            padding-bottom: 24px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            border-bottom: 1px solid #945a5a;
+            input{
+                width: 152px;
+            }
+            /* flex-grow: 5; */
+        }
+        #orderedByPrice{
+            width: 240px;
+            height: 32px;
+            border: 2px solid #945a5a !important;
+            border-radius: 24px;
+            background-color: #ffffff00;
+            font-size: 16px;
+            .iconToUP , .iconToDown{
+                width: 10px; 
+            }
+            .toUp , .toDown{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            option{
+                background-color: #804c4ccc;
+            }
+        }
+    }
+
+    /* a{
+        width: 104px;
+        text-align: center;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #945a5a;
+    } */
+}
+
+.container .slider{
+    /* max-width: ; */
+    margin: 0 auto;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    .arrowIcon{
+        width: 24px;
+    }
+    .cards{
+        width: 736px;
+        /* border: 1px solid black; */
+        display: flex;
+        gap: 10px;
+        overflow: hidden;
+        .silderCard{
+            padding: 8px;
+            /* box-shadow: 0px 0px 8px black; */
+            /* background-color: #e8e7e7aa; */
+            background-color: #7c626230;
+            border-radius: 20px;
+            img{
+                width: 160px;
+                border-radius: 10px;
+                /* box-shadow: 0px 0px 8px black; */
+            }
+            p{
+                color: rgb(69, 67, 67);
+            }
+        }
+    }
+}
+
+.bottomRight{
+    margin: 20px;
+    h3{
+        font-size: 32px;
+        margin-bottom: 8px;
+    }
+    .explanatoryText{
+        color: #514848;
+        
+    }
+
+    .all{
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+}
+
+
+/* my Classes */
+
+.publicCard{
+    width: 240px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #f3f3f3;
+    &:hover{
+        transform: scale(1.03);
+        transition-duration: 0.3s;
+    }
+    img{
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        box-shadow: 0px 2px 4px #945a5a99, inset 0 0 #ffffff;
+    }
+    .description{
+        padding: 8px;
+        h4{
+            max-width: 200px;
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+        .secondryDescription{
+            padding: 4px 0;
+            font-size: 14px;
+            color: #514848;
+        }
+    }
+}

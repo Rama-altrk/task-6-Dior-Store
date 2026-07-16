@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    background-color: #f5e7d899;
+}
+
+.sideBar{
+    width: 25vw;
+    height: 100vh;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 88px;
+    flex-shrink: 0;
+    a{
+        min-width: 104px;
+        text-align: center;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #945a5a;
+    }
+}
+
+.rightSide{
+    width: 100%;
+    border-left: 1px solid #945a5a;
+}
+
+/* My classes */
+
+.myBottun{
+    height: 32px;
+    padding: 4px;
+    font-size: 16px;
+    background-color: #f5e7d800;
+    border-radius: 10px;
+    border: 1px solid;
+    &:hover{
+        /* background-color: #945a5a; */
+        /* background-color: #774343; */
+        background-color: #b07373;
+        transition: background-color 0.3s ease; 
+    }
+}
+
+.hidden{
+    display: none;
+}
